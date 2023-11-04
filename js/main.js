@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     async function getWeatherData(latitude, longitude) {
-        const response = await fetch(`http://www.7timer.info/bin/api.pl?lon=${longitude}&lat=${latitude}&product=civillight&output=json`);
+        const response = await fetch(`https://www.7timer.info/bin/api.pl?lon=${longitude}&lat=${latitude}&product=civillight&output=json`);
         const data = await response.json();
         return data;
     }
